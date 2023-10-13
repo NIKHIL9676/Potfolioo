@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body{
+            background: linear-gradient(to right , #99DBF5 50% , #A7ECEE 50%);
+            margin: 75px;
+          }
+        #header
+        {
+          font-family: monospace;
+          font-size: large;
+          color: aqua;
+    
+        }
+        fieldset
+        {
+            scroll-padding-top: 30%;
+        }   
+        a:hover{
+            border: 1px solid  black;
+      
+          }
+          a
+          {
+            text-decoration:none
+          } 
+    </style>
+</head>
+<body>
+    <pre>
+        <p id="header">       <a  href="index.html">   Home </a>       <a href="Education.html">   Education  </a>       <a href="project.html">  Projects   </a>       <a href="certificate.html">   Certifications  </a>        <a href="contactMe.html">  Contact me  </a>  <a href="about.html">   About me</a></p>
+    </pre>
+    
+    <form action="submit.html">
+        <fieldset>
+            
+            <legend><h1> Personal Details</h1></legend>
+            <label for="name">Full Name : </label>
+            <input type="text" name="" required id="name" placeholder="Enter your full name" pattern="[a-zA-Z]{3,8}"  ><br><br>
+            <label for="email">Email id : </label>
+            <input type="email" id="email" required placeholder="Ex : abc@gmail.com"><br><br>
+            <label for="email"> Contact number</label>
+            <input type="text" id="nuumber" required placeholder="Ex : 99787134XX" pattern="[6-9]{1}[0-9]{9}"><br><br>
+            <label for="">Gender : </label>
+            <input type="radio" name="Gender"  id="male">
+            <label for="male"> Male</label>
+            <input type="radio" name="Gender" id="female">
+            <label for="female"> Female  </label><br><br>
+            <input type="submit" name="" id="">
+        </fieldset>
+    </form>
+</body>
+</html>
